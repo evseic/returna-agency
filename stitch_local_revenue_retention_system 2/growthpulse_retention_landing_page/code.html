@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GrowthPulse Retention | Maximize Your Customer ROI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "tertiary-container": "#002020",
+                "data-soft": "#A9C5DA",
+                "surface": "#f7f9fb",
+                "on-tertiary-fixed-variant": "#194e4e",
+                "secondary-fixed": "#6ffbbe",
+                "on-tertiary": "#ffffff",
+                "error-container": "#ffdad6",
+                "inverse-on-surface": "#eff1f3",
+                "secondary": "#006c49",
+                "on-error": "#ffffff",
+                "tertiary-fixed": "#b8eceb",
+                "emerald-growth": "#10B981",
+                "primary-fixed": "#dae2fd",
+                "secondary-container": "#6cf8bb",
+                "surface-tint": "#565e74",
+                "on-secondary": "#ffffff",
+                "on-tertiary-container": "#5b8c8c",
+                "on-surface-variant": "#45464d",
+                "on-secondary-fixed-variant": "#005236",
+                "surface-container": "#eceef0",
+                "surface-container-highest": "#e0e3e5",
+                "surface-dim": "#d8dadc",
+                "surface-container-lowest": "#ffffff",
+                "outline": "#76777d",
+                "on-primary": "#ffffff",
+                "primary": "#000000",
+                "tertiary": "#000000",
+                "surface-variant": "#e0e3e5",
+                "on-surface": "#191c1e",
+                "deep-navy": "#0F172A",
+                "border-subtle": "#E2E8F0",
+                "on-secondary-fixed": "#002113",
+                "on-tertiary-fixed": "#002020",
+                "on-background": "#191c1e",
+                "on-primary-fixed-variant": "#3f465c",
+                "error": "#ba1a1a",
+                "surface-bright": "#f7f9fb",
+                "background": "#f7f9fb",
+                "tertiary-fixed-dim": "#9dd0cf",
+                "surface-container-low": "#f2f4f6",
+                "primary-fixed-dim": "#bec6e0",
+                "secondary-fixed-dim": "#4edea3",
+                "inverse-primary": "#bec6e0",
+                "inverse-surface": "#2d3133",
+                "primary-container": "#131b2e",
+                "on-primary-fixed": "#131b2e",
+                "outline-variant": "#c6c6cd",
+                "on-secondary-container": "#00714d",
+                "data-muted": "#80A1BA",
+                "on-primary-container": "#7c839b",
+                "on-error-container": "#93000a",
+                "surface-container-high": "#e6e8ea"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "container-max": "1280px",
+                "stack-lg": "32px",
+                "margin-mobile": "16px",
+                "gutter": "24px",
+                "stack-md": "16px",
+                "base": "4px",
+                "stack-sm": "8px",
+                "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                "body-lg": ["Inter"],
+                "body-md": ["Inter"],
+                "headline-lg": ["Space Grotesk"],
+                "headline-md": ["Space Grotesk"],
+                "display-lg": ["Space Grotesk"],
+                "label-bold": ["Inter"],
+                "mono-metric": ["Space Grotesk"],
+                "headline-lg-mobile": ["Space Grotesk"],
+                "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "mono-metric": ["20px", {"lineHeight": "24px", "fontWeight": "700"}],
+                "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .nav-active {
+            border-bottom: 2px solid #000;
+            padding-bottom: 4px;
+        }
+        .bento-card {
+            background: #ffffff;
+            border: 1px solid #E2E8F0;
+            transition: all 0.2s ease;
+        }
+        .bento-card:hover {
+            box-shadow: 0 12px 24px -10px rgba(15, 23, 42, 0.04);
+            border-color: #CBD5E1;
+        }
+        .dashboard-gradient {
+            background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-primary-container/80 backdrop-blur-md border-b border-border-subtle dark:border-outline-variant">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-on-primary-fixed">GrowthPulse</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="text-label-bold font-label-bold text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Process</a>
+<a class="text-label-bold font-label-bold text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Results</a>
+<a class="text-label-bold font-label-bold text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Services</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-bold text-label-bold hover:scale-95 transition-transform">
+                Book a Strategy Call
+            </button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-24 pb-32 md:pt-32 md:pb-48 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-stack-lg items-center">
+<div class="z-10">
+<span class="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container font-label-bold text-label-sm rounded-full mb-stack-md uppercase tracking-wider">ROI-Focused Automation</span>
+<h1 class="font-display-lg text-display-lg text-deep-navy mb-stack-md leading-tight">Increase Revenue from Existing Customers with Automated Retention Systems</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-lg">Done-for-you SMS and WhatsApp automation that turns your customer database into predictable monthly revenue.</p>
+<div class="flex flex-col sm:flex-row gap-stack-md">
+<button class="bg-deep-navy text-white px-8 py-4 rounded-lg font-label-bold text-label-bold hover:bg-primary transition-all">Book a Strategy Call</button>
+<button class="bg-white border border-border-subtle text-deep-navy px-8 py-4 rounded-lg font-label-bold text-label-bold hover:bg-surface-container transition-all">View Results</button>
+</div>
+</div>
+<div class="relative mt-12 md:mt-0">
+<div class="bento-card p-gutter rounded-xl shadow-sm relative z-10 overflow-hidden">
+<div class="flex items-center justify-between mb-stack-lg">
+<h3 class="font-headline-md text-headline-md">Growth Dashboard</h3>
+<span class="material-symbols-outlined text-emerald-growth" data-icon="trending_up">trending_up</span>
+</div>
+<div class="space-y-stack-md">
+<div class="h-48 w-full bg-surface-container rounded-lg relative overflow-hidden">
+<div class="absolute bottom-0 left-0 w-full h-2/3 bg-emerald-growth/10 border-t-2 border-emerald-growth"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="grid grid-cols-6 gap-2 w-full px-4 h-32 items-end">
+<div class="bg-deep-navy/20 h-1/4 rounded-sm"></div>
+<div class="bg-deep-navy/20 h-2/4 rounded-sm"></div>
+<div class="bg-deep-navy/20 h-3/4 rounded-sm"></div>
+<div class="bg-emerald-growth h-full rounded-sm"></div>
+<div class="bg-emerald-growth h-5/6 rounded-sm"></div>
+<div class="bg-emerald-growth h-4/6 rounded-sm"></div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-stack-md">
+<div class="p-stack-md border border-border-subtle rounded-lg">
+<p class="text-label-sm font-label-sm text-on-surface-variant">LTV Increase</p>
+<p class="font-mono-metric text-mono-metric text-emerald-growth">+42.5%</p>
+</div>
+<div class="p-stack-md border border-border-subtle rounded-lg">
+<p class="text-label-sm font-label-sm text-on-surface-variant">Retention Rate</p>
+<p class="font-mono-metric text-mono-metric text-deep-navy">89.2%</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative back elements -->
+<div class="absolute -top-6 -right-6 w-full h-full bg-deep-navy/5 rounded-xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="bg-deep-navy text-white py-24 md:py-32">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-3xl mb-20">
+<h2 class="font-headline-lg text-headline-lg mb-stack-md">The Hidden Cost of Inactive Customers</h2>
+<p class="text-body-lg text-white/70">Most businesses focus 100% of their energy on acquiring new leads while letting their existing goldmine of past customers go cold.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-stack-lg">
+<div class="p-gutter border border-white/10 rounded-lg bg-white/5 backdrop-blur-sm">
+<p class="font-display-lg text-display-lg text-emerald-growth mb-stack-sm">20-40%</p>
+<p class="font-headline-md text-headline-md mb-stack-sm">Revenue Loss</p>
+<p class="text-body-md text-white/60">Estimated average revenue lost annually due to inconsistent or non-existent customer follow-ups.</p>
+</div>
+<div class="p-gutter border border-white/10 rounded-lg bg-white/5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-4xl mb-stack-md text-emerald-growth" data-icon="timer">timer</span>
+<p class="font-headline-md text-headline-md mb-stack-sm">The 72-Hour Rule</p>
+<p class="text-body-md text-white/60">Engagement drops by 80% if a customer isn't re-targeted within 72 hours of their last interaction.</p>
+</div>
+<div class="p-gutter border border-white/10 rounded-lg bg-white/5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-4xl mb-stack-md text-emerald-growth" data-icon="payments">payments</span>
+<p class="font-headline-md text-headline-md mb-stack-sm">High CAC</p>
+<p class="text-body-md text-white/60">Acquiring a new customer is 7x more expensive than selling to one you already have in your CRM.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-md">The Retention Optimization System</h2>
+<p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">We don't just send messages; we build automated ecosystem that nurtures your customers back to the checkout page.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-stack-lg">
+<div class="bento-card p-gutter rounded-xl">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg mb-stack-md">
+<span class="material-symbols-outlined text-deep-navy" data-icon="sms">sms</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-stack-sm">Automated SMS</h3>
+<p class="text-body-md text-on-surface-variant">Time-sensitive offers and reminders with 98% open rates that cut through the digital noise instantly.</p>
+</div>
+<div class="bento-card p-gutter rounded-xl">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg mb-stack-md">
+<span class="material-symbols-outlined text-deep-navy" data-icon="chat">chat</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-stack-sm">WhatsApp Follow-ups</h3>
+<p class="text-body-md text-on-surface-variant">High-engagement conversational threads that build trust and answer customer objections in real-time.</p>
+</div>
+<div class="bento-card p-gutter rounded-xl">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg mb-stack-md">
+<span class="material-symbols-outlined text-deep-navy" data-icon="rebase_edit">rebase_edit</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-stack-sm">Reactivation Campaigns</h3>
+<p class="text-body-md text-on-surface-variant">Win back "lost" customers with algorithmic sequences designed to trigger emotional re-engagement.</p>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-24 bg-surface-container-low">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-stack-lg items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-lg">From Database to Revenue in 3 Steps</h2>
+<div class="space-y-stack-lg">
+<div class="flex gap-stack-md">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-deep-navy text-white flex items-center justify-center font-bold">1</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-stack-sm">System Integration</h4>
+<p class="text-body-md text-on-surface-variant">We connect your current POS or CRM to our proprietary retention engine without any technical heavy lifting from your team.</p>
+</div>
+</div>
+<div class="flex gap-stack-md">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-deep-navy text-white flex items-center justify-center font-bold">2</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-stack-sm">Sequence Automation</h4>
+<p class="text-body-md text-on-surface-variant">We craft and deploy custom SMS and WhatsApp funnels tailored to your specific customer segments and buying cycles.</p>
+</div>
+</div>
+<div class="flex gap-stack-md">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-deep-navy text-white flex items-center justify-center font-bold">3</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-stack-sm">Scalable Revenue</h4>
+<p class="text-body-md text-on-surface-variant">Watch as your database turns into a predictable source of monthly recurring revenue with transparent ROI reporting.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative p-gutter">
+<img alt="Abstract data visualization dashboard" class="w-full rounded-xl shadow-xl grayscale contrast-125" data-alt="A ultra-modern financial data visualization dashboard showing glowing emerald green line charts against a dark slate background. The aesthetic is clean, corporate, and minimalist, emphasizing precision and data clarity. The lighting is low-key with sharp, focused highlights on key performance indicators and growth metrics, conveying a sense of stability and professional success in a high-tech marketing environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzk2NfIWf6jwP0DWbHsXm-G7-YYB_Pu8Thbd6bXXKrdrQ30nfRCa7-UQbw3NfVV3uRdQQiQTggge0O4Ig7CjfD5qWTrm8FaiZ5hQoy3NA_Otj2txzirYFkzqN2YsDleMi_WvhA4fKcpG6N7pBzSBdBM9ShW_AvocvhJ6VQv736bjt-dqX6sko56M8yr9ZPlG9Zmq_fBgPs-PoTu4r9wuqscNh_EIB2Cw3sXUl0eQYs_fjX0nFaibo4_wOhT9mpQGzDajEOwO0DkWf0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ROI/Results Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-md">The Numbers Don't Lie</h2>
+<p class="text-body-lg text-on-surface-variant">Real-world results achieved for our performance partners.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter">
+<div class="bento-card p-gutter rounded-xl text-center">
+<p class="text-label-bold font-label-bold text-on-surface-variant mb-stack-sm uppercase">Retention Boost</p>
+<p class="font-display-lg text-display-lg text-emerald-growth">+28%</p>
+<p class="text-body-md text-on-surface-variant">Repeat Customers</p>
+<div class="mt-stack-md pt-stack-md border-t border-border-subtle flex items-center justify-center gap-1 text-emerald-growth">
+<span class="material-symbols-outlined text-sm" data-icon="arrow_upward">arrow_upward</span>
+<span class="text-label-sm font-label-sm">Above Industry Avg</span>
+</div>
+</div>
+<div class="bento-card p-gutter rounded-xl text-center">
+<p class="text-label-bold font-label-bold text-on-surface-variant mb-stack-sm uppercase">Recovered Revenue</p>
+<p class="font-display-lg text-display-lg text-deep-navy">€4.2k</p>
+<p class="text-body-md text-on-surface-variant">Recovered Monthly</p>
+<div class="mt-stack-md pt-stack-md border-t border-border-subtle flex items-center justify-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="sync">sync</span>
+<span class="text-label-sm font-label-sm">Average per client</span>
+</div>
+</div>
+<div class="bento-card p-gutter rounded-xl text-center">
+<p class="text-label-bold font-label-bold text-on-surface-variant mb-stack-sm uppercase">Efficiency</p>
+<p class="font-display-lg text-display-lg text-emerald-growth">15%</p>
+<p class="text-body-md text-on-surface-variant">Fewer Missed Appointments</p>
+<div class="mt-stack-md pt-stack-md border-t border-border-subtle flex items-center justify-center gap-1 text-emerald-growth">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span class="text-label-sm font-label-sm">Automated Reminders</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services -->
+<section class="py-24 bg-deep-navy text-white overflow-hidden relative">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg">Complete Management</h2>
+<div class="bg-white/5 border border-white/10 p-gutter rounded-xl backdrop-blur-md">
+<div class="flex justify-between items-start mb-stack-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-white mb-stack-sm">Done-for-you Setup &amp; Management</h3>
+<p class="text-body-md text-white/60 mb-stack-lg">A turnkey solution where we handle everything from copywriting to technical automation.</p>
+</div>
+<div class="text-right">
+<span class="font-display-lg text-display-lg text-emerald-growth">€300</span>
+<span class="text-label-sm block text-white/50">/ month</span>
+</div>
+</div>
+<ul class="space-y-stack-sm mb-stack-lg">
+<li class="flex items-center gap-2 text-white/80">
+<span class="material-symbols-outlined text-emerald-growth" data-icon="check">check</span>
+                                Full CRM Integration
+                            </li>
+<li class="flex items-center gap-2 text-white/80">
+<span class="material-symbols-outlined text-emerald-growth" data-icon="check">check</span>
+                                Custom SMS/WhatsApp Sequences
+                            </li>
+<li class="flex items-center gap-2 text-white/80">
+<span class="material-symbols-outlined text-emerald-growth" data-icon="check">check</span>
+                                Monthly ROI &amp; Performance Audit
+                            </li>
+</ul>
+<button class="w-full bg-emerald-growth text-deep-navy font-label-bold py-4 rounded-lg hover:brightness-110 transition-all">Start Your Growth Pulse</button>
+</div>
+</div>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -right-24 top-1/2 -translate-y-1/2 w-96 h-96 border border-emerald-growth/20 rounded-full"></div>
+<div class="absolute -right-12 top-1/2 -translate-y-1/2 w-96 h-96 border border-emerald-growth/10 rounded-full scale-125"></div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-display-lg text-display-lg text-deep-navy mb-stack-md">Turn your existing customers into predictable revenue.</h2>
+<p class="text-body-lg text-on-surface-variant mb-stack-lg max-w-2xl mx-auto">Stop leaving money on the table. Let us automate your retention so you can focus on leading your business.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-stack-md">
+<button class="bg-deep-navy text-white px-12 py-5 rounded-lg font-label-bold text-label-bold hover:bg-primary transition-all shadow-lg">Schedule Your Free Strategy Call</button>
+</div>
+<p class="mt-stack-md text-label-sm text-on-surface-variant italic">No long-term contracts. Just performance-driven results.</p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-primary-container border-t border-border-subtle dark:border-outline-variant w-full py-12">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-stack-lg">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-on-primary-fixed">GrowthPulse</div>
+<div class="flex gap-stack-md text-label-sm font-label-sm text-on-surface-variant dark:text-on-primary-container">
+<a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Case Studies</a>
+<a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-primary-container opacity-60">
+                © 2024 GrowthPulse Retention. All rights reserved. Built for ROI.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple intersection observer for reveal effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+            observer.observe(section);
+        });
+
+        // Initialize header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>
