@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface antialiased;
+  }
+}
+
+.bento-card {
+  background: #ffffff;
+  border: 1px solid #E1ECE8;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+  box-shadow: 0 16px 32px -12px rgba(14, 62, 52, 0.08);
+  border-color: #C1DDD5;
+}
+
+.dashboard-gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, #EAF1EE 100%);
+}
+
+.bg-mesh-gradient {
+  background-color: #F3F8F6;
+  background-image: radial-gradient(at 0% 0%, rgba(14, 62, 52, 0.06) 0px, transparent 60%),
+                    radial-gradient(at 100% 100%, rgba(14, 168, 126, 0.06) 0px, transparent 60%);
+}
+
+/* Background floating animations */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-25px) scale(1.1);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0) scale(1.1);
+  }
+  50% {
+    transform: translateY(25px) scale(1);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 14s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 18s ease-in-out infinite;
+}
+
+/* iOS Message bubble pop animation */
+@keyframes email-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-email-pop {
+  animation: email-pop 0.32s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
